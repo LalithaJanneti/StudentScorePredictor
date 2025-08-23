@@ -9,7 +9,7 @@ from sklearn.metrics import mean_squared_error,mean_absolute_error,r2_score
 
 @st.cache_data
 def load_data():
-    df=pd.read_csv("/home/rgukt/python/Linearregreesion/StudentScorePredictor/StudentsPerformance.csv")
+    df=pd.read_csv("StudentsPerformance.csv")
     df=pd.get_dummies(df,drop_first=True)
     return df
 
